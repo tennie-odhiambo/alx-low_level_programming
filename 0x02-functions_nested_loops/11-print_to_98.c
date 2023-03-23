@@ -3,41 +3,31 @@
 
 /**
  * print_to_98 - prints all natural numbers from n to 98
- * @b: The number to start from
+ * @n: The number to start from
  * Return: 0
 */
 void print_to_98(int n)
 {
-	if (b <= 98)
+	int i,j;
+
+	if (n <= 98)
 	{
-	for (; b <= 98; b++)
+	for (i= n;i <= 98; i++)
 	{
-	 if (b == 98)
-	{
-	printf("%d", b);
-	printf("\n");
-	break;
-	}
-	 else
-	{
-	printf("%d,", b);
+	 if (i != 98)
+	printf("%d,", i);
+	 else if(i == 98)
+	printf("%d\n", i);
 	}
 	}
-	}
-	else
+	else if (n >= 98)
 	{
-	for (; b >= 98; b ==)
+	for (j = n;j >= 98; j--)
 	{
-	if (b == 98)
-	{
-	printf("%d", b);
-	printf("\n");
-	break;
-	}
-	else
-	{
-	printf("%d,", b);
-	}
+	if (j != 98)
+	printf("%d,", j);
+	else if(j == 98)
+	printf("%d\n", j);
 	}
 	}
 }
